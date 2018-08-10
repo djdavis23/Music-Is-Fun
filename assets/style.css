@@ -1,0 +1,23 @@
+
+header {
+  background-image: url("music1.jpg");
+  background-size: cover;
+  min-height: 20vh;
+}
+
+.form-group {
+  border: 1px solid #325d88;  
+  border-radius: 10px;
+  background-color: #d3d3d0
+}
+
+.card-header, .card-footer {
+  color: white;
+  background: #325d88
+}
+
+audio {
+  width: 90%;
+}
+
+  

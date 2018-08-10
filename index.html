@@ -5,24 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Music Is Fun!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-
+    <title>d2Tunes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-oCbSd1BBeFjYEul9+YuTFSFhA19lHemUQj8KD8Cgdb8zRxt6nOVsdTW43N1G2Hf2"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="text-white">
+                    <strong>Welcome to d2Tunes</strong>
+                </h1>
+                <p class="text-white">Powered by iTunes
+                    <i class="fab fa-itunes"></i>
+                </p>
+            </div>
         </div>
-    </form>
-    <div id="songs">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                    <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                    <div class="form-group mt-2 p-2 ml-5">
+                        <input type="text" class="form-control mt-2 mb-2 mr-2" name="artist" placeholder="Artist Name" />
+                        <button type="submit" class="btn btn-primary mt-2 mb-2" id="get-music-button">Get Music</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div id="songs" class="row">
 
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="module" src="main.js"></script>
+            <div class="col-md-3">
+                <div class="card bg-light mb-3">
+                    <h3 class="card-header">Artist</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Song Title</h5>
+                        <h6 class="card-subtitle text-muted">Collection Title</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="//placehold.it/150x150" alt="Card image">
+                    <div class="card-body">
+                        <audio controls>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="card-footer">
+                        Price: $
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-light mb-3">
+                    <h3 class="card-header">Artist</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Song Title</h5>
+                        <h6 class="card-subtitle text-muted">Collection Title</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="//placehold.it/150x150" alt="Card image">
+                    <div class="card-body">
+                        <audio controls>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="card-footer">
+                        Price: $
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-light mb-3">
+                    <h3 class="card-header">Artist</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Song Title</h5>
+                        <h6 class="card-subtitle text-muted">Collection Title</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="//placehold.it/150x150" alt="Card image">
+                    <div class="card-body">
+                        <audio controls>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="card-footer">
+                        Price: $
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-light mb-3">
+                    <h3 class="card-header">Artist</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Song Title</h5>
+                        <h6 class="card-subtitle text-muted">Collection Title</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="//placehold.it/150x150" alt="Card image">
+                    <div class="card-body">
+                        <audio controls>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="card-footer">
+                        Price: $
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-light mb-3">
+                    <h3 class="card-header">Artist</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Song Title</h5>
+                        <h6 class="card-subtitle text-muted">Collection Title</h6>
+                    </div>
+                    <img style="width: 100%; display: block;" src="//placehold.it/150x150" alt="Card image">
+                    <div class="card-body">
+                        <audio controls>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="horse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="card-footer">
+                        Price: $
+                    </div>
+                </div>
+            </div>
+
+            <!-- insert song cards here -->
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="module" src="main.js"></script>
+    </main>
 </body>
 
 </html>
