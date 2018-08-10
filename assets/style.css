@@ -2,7 +2,7 @@
 header {
   background-image: url("music1.jpg");
   background-size: cover;
-  min-height: 20vh;
+  min-height: 25vh;
 }
 
 .form-group {
@@ -11,13 +11,17 @@ header {
   background-color: #d3d3d0
 }
 
+main {
+  background-color: #d3d3d0;
+}
+
 .card-header, .card-footer {
   color: white;
   background: #325d88
 }
 
 audio {
-  width: 90%;
+  width: 90%;  
 }
 
   

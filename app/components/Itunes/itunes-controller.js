@@ -7,9 +7,34 @@ const itunesService = new ItunesService()
 function drawSongs(results) {
   console.log(results)
   //YOUR CODING STARTS HERE
+  let template = ""
 
-
-
+  results.forEach(song => {
+    template += `
+    <div class="col-md-3">
+      <div class="card bg-primary mb-3">
+          <h3 class="card-header">${song.artist}</h3>
+          <div class="card-body">
+              <h5 class="card-title text-white">${song.title}</h5>
+              <h6 class="card-subtitle text-muted">${song.collection}</h6>
+          </div>
+          <img style="width: 100%; display: block;" src="${song.albumArt}" alt="Card image">
+          <div class="card-body">
+              <audio controls volume="0.3">
+                  <source src="${song.preview}" type="audio/ogg">
+                  <source src="${song.preview}" type="audio/aac">
+                  <source src="${song.preview}" type="audio/mp4">
+                  Your browser does not support the audio element.
+              </audio>
+          </div>
+          <div class="card-footer">
+              Price: $${song.price}
+          </div>
+      </div>
+    </div>    
+    `
+  })
+  document.getElementById("songs").innerHTML = template;
 }
 
 
