@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <header class="container-lfuid">
+    <header id="header" class="container-fluid">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h1 class="text-white">
+            <div class="col-md-11 offset-md-1">
+                <h1 id="welcome">
                     <strong>Welcome to d2Tunes</strong>
                 </h1>
                 <p class="text-white">Powered by iTunes
@@ -25,10 +25,10 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-11 offset-md-1">
                 <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                     <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                    <div class="form-group mt-2 p-2 ml-5">
+                    <div class="form-group mt-2 p-2">
                         <input type="text" class="form-control mt-2 mb-2 mr-2" name="artist" placeholder="Artist Name" />
                         <button type="submit" class="btn btn-primary mt-2 mb-2" id="get-music-button">Get Music</button>
                     </div>

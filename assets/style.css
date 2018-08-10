@@ -1,8 +1,20 @@
 
-header {
-  background-image: url("music1.jpg");
+#welcome {
+  color: white;
+}
+
+body {
+  background-image: url("music5.jpg");
   background-size: cover;
-  min-height: 25vh;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 100vh;
+  /* min-height: 25vh; */
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center
 }
 
 .form-group {
@@ -12,7 +24,7 @@ header {
 }
 
 main {
-  background-color: #d3d3d0;
+  background-color: rgb(37, 34, 34);
 }
 
 .card-header, .card-footer {
@@ -23,5 +35,12 @@ main {
 audio {
   width: 90%;  
 }
+
+
+
+/* 
+* {
+  outline: 1px solid red;
+} */
 
   

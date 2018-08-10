@@ -11,11 +11,11 @@ function drawSongs(results) {
 
   results.forEach(song => {
     template += `
-    <div class="col-md-3">
-      <div class="card bg-primary mb-3">
+    <div class="col-md-3 col-xs-12">
+      <div class="card bg-light mb-3">
           <h3 class="card-header">${song.artist}</h3>
           <div class="card-body">
-              <h5 class="card-title text-white">${song.title}</h5>
+              <h5 class="card-title">${song.title}</h5>
               <h6 class="card-subtitle text-muted">${song.collection}</h6>
           </div>
           <img style="width: 100%; display: block;" src="${song.albumArt}" alt="Card image">
@@ -34,6 +34,9 @@ function drawSongs(results) {
     </div>    
     `
   })
+  // let top = document.getElementById("header")
+  // top.style.backgroundImage = 'url("assets/music2.jpg")'
+  // document.getElementById("welcome").style.color = "#325d88"
   document.getElementById("songs").innerHTML = template;
 }
 
