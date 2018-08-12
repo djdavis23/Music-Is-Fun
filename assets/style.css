@@ -4,12 +4,11 @@
 }
 
 body {
-  background-image: url("music5.jpg");
+  background-image: url("music.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
-  height: 100vh;
-  /* min-height: 25vh; */
+  height: 100vh;  
 }
 
 .flexbox {
@@ -32,15 +31,12 @@ main {
   background: #325d88
 }
 
+.card-title {
+  cursor: pointer;
+}
+
 audio {
-  width: 90%;  
+  width: 90%;   
 }
 
 
-
-/* 
-* {
-  outline: 1px solid red;
-} */
-
-  

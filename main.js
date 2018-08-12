@@ -7,6 +7,7 @@ class App {
       itunesCtrl: new ItunesController()
     }
   }
-}
 
+}
+//@ts-ignore
 window.app = new App()
