@@ -6,7 +6,7 @@ class ItunesService {
   //DO NOT MODIFY
 
   getMusicByArtist(artist) {
-    var url = 'https://itunes.apple.com/search?callback=?term=' + artist;
+    var url = 'https://itunes.apple.com/search?callback=?&term=' + artist;
     //Casts each object to 
     //@ts-ignore
     return $.getJSON(url)
