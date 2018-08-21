@@ -13,38 +13,56 @@
 </head>
 
 <body>
-    <header id="header" class="container-fluid">
+    <main class="container-fluid">
         <div class="row">
-            <div class="col-md-4 offset-md-7">
-                <h1 id="welcome" class="mt-2">
-                    <strong>Welcome to d2Tunes</strong>
-                </h1>
-                <p class="text-white">Powered by iTunes
-                    <i class="fab fa-itunes"></i>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 offset-md-7">
-                <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                    <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                    <div class="form-group mt-2 p-2">
-                        <input type="text" class="form-control mt-2 mb-2 mr-2" name="artist" placeholder="Artist Name" />
-                        <button type="submit" class="btn btn-primary mt-2 mb-2" id="get-music-button">Get Music</button>
+            <div id="left-panel" class="col-md-6 col-xs-12">
+                <div class="row">
+                    <div id="control-panel" class="col-md-6 offset-md-6 col-xs-12">
+                        <h1 id="welcome" class="mt-2">
+                            <strong>Welcome to d2Tunes</strong>
+                        </h1>
+                        <p class="text-white">Powered by iTunes
+                            <i class="fab fa-itunes"></i>
+                        </p>
+                        <!-- </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 offset-md-3"> -->
+
+                        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                            <div class="form-group mt-2 p-2">
+                                <input type="text" class="form-control mt-2 mb-2 mr-2" name="artist" placeholder="Artist Name" />
+                                <button type="submit" class="btn btn-primary mt-2 mb-2" id="get-music-button">Get Music</button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+
+                </div>
+
+
             </div>
-        </div>
+
+
+            <!-- </div>
     </header>
     <main class="container-fluid">
-        <div id="songs" class="row">
+        <div class="row">
 
-            <!-- insert song cards here -->
+        </div> -->
 
+            <div id="right-panel" class="col-md-6 offset-md-6 col-xs-12">
+
+                <div id="songs" class="row">
+
+                    <!-- insert song cards here -->
+
+                </div>
+            </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="module" src="main.js"></script>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>

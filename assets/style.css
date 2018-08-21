@@ -3,12 +3,19 @@
   color: white;
 }
 
-body {
-  background-image: url("music.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
+body {  
   background-color: black;
   height: 100vh;  
+}
+
+#left-panel {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background-image: url("music.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;    
 }
 
 .flexbox {
@@ -22,10 +29,6 @@ body {
   background-color: #d3d3d0
 }
 
-main {
-  background-color: rgb(37, 34, 34);
-}
-
 .card-header, .card-footer {
   color: white;
   background: #325d88
@@ -37,6 +40,25 @@ main {
 
 audio {
   width: 90%;   
+}
+
+@media screen and (max-width: 768px) {
+  .song-card {
+    position: relative;
+    z-index: 0;
+    padding-top: 230px;    
+  }
+
+  .card {
+    z-index: auto;
+    position: relative;
+  } 
+
+  #control-panel {
+    position: fixed;
+    z-index: 10
+  }
+  
 }
 
 

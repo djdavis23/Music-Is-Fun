@@ -15,7 +15,7 @@ function drawSongs(results) {
     //if statement ensures videos are filtered out
     if (song.preview.search("video") == -1) {
       template += `
-    <div class="col-md-3 col-xs-12">
+    <div class="col-md-6 col-xs-12 song-card">
       <div class="card bg-light mb-3">
           <h3 class="card-header">${song.artist}</h3>
           <div class="card-body">
